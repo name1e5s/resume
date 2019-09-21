@@ -13,76 +13,69 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{于海鑫}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{name1e5s@qq.com} \textperiodcentered\ 
+  \phone{151-0113-5718} \textperiodcentered\ 
+  \github[name1e5s]{https://github.com/name1e5s}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{北京邮电大学}, 北京}{2017 -- 至今}
+\textit{本科生}\ 计算机科学与技术, 预计 2021 年 6 月毕业
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{Sirius -- MIPS 处理器}}{2019 年 5 月 -- 2019 年 8 月}
+\role{SystemVerilog}{}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+运行于 FPGA 上的顺序双发射 MIPS 微处理器, https://github.com/name1e5s/Sirius
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item “龙芯杯”全国计算机系统能力培养大赛参赛作品，荣获\textbf{一等奖}。
+  \item 从零开始自行设计的五级流水线双发射 MIPS32 微处理器，主频 100 MHz，
+  同时基于该处理器搭建完整的 SoC，支持网口、串口等外设。可以在其上运行 uCore
+  教学用操作系统，理论上能够运行完整的 Linux 操作系统。
+  \item 处理器性能较高，初赛性能分排名\textbf{第二}
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{DNS 中继服务器}}{2019 年 2 月 -- 2019 年 6 月}
+\role{GoLang}{课程项目}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+支持 DNS 转发及不良网址拦截的中继服务器, https://github.com/name1e5s/MuddyDNS
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item “计算机网络课程设计” 课程项目
+  \item 根据 RFC 1035 所述规范解析 DNS 包头，根据处理后的结果对 DNS 包进行处理
+  \item 使用 CSP 模型实现并发
+  \item 在完成课程设计之余探索了 Go 语言如何处理系统调用的流程
 \end{itemize}
 \end{onehalfspacing}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{车间调度模拟系统}}{2018 年 4 月 -- 2018 年 6 月}
+\role{C, C++, Qt5}{课程项目}
+\begin{onehalfspacing}
+支持求解 JobShop 问题的车间调度模拟系统, https://github.com/name1e5s/JobShop
+\begin{itemize}
+  \item “计算导论与程序设计课程设计” 课程项目，课程最终得分 99.25
+  \item 使用 \href{http://www.jstor.org/stable/2632051}{The Shifting Bottleneck Procedure for Job Shop Scheduling}
+        所述的移动评价法求解 JobShop 问题。效果拔群，
+  \item 使用 Qt5 绘制了简单的界面以通过甘特图的形式展示调度结果，
+\end{itemize}
+\end{onehalfspacing}
 
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
+  \item 编程语言: C == C++ > Python > Java > Rust
   \item 平台: Linux
-  \item 开发: xxx
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{一等奖}, “龙芯杯”第三届全国大学生计算机系统能力培养大赛}{2019 年 8 月}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 技术博客: https://blog.0xbfc00380.com/
 \end{itemize}
 
 %% Reference
