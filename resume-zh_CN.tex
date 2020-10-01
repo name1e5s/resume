@@ -23,38 +23,48 @@
   \homepage[blog.name1e5s.com]{http://blog.name1e5s.com/}}
 
 \section{\faGraduationCap\  教育经历}
+
 \datedsubsection{\textbf{北京邮电大学}, 北京}{2017 年 9 月 -- 2021 年 6 月}
-\textit{本科生}\ 计算机学院，计算机科学与技术专业，GPA 3.50
+\textit{本科生}\ 计算机学院，计算机科学与技术专业，GPA \textbf{3.5}
 
 \begin{onehalfspacing}
   主要课程成绩：
 \end{onehalfspacing}
 \begin{itemize}
   \item \textbf{大一} \quad 计算导论与程序设计（\textbf{91}）、
-        计算导论与程序设计课程设计（\textbf{99}）、离散数学上（\textbf{95}）
+        计算导论与程序设计课程设计（\textbf{99}）、离散数学（\textbf{95}）
   \item \textbf{大二} \quad 计算机系统基础（\textbf{92}）、计算机系统基础实践（\textbf{98}）、
         数据结构课程设计（\textbf{95}）、计算机组成原理课程设计（\textbf{97}）、
         计算机网络课程设计（\textbf{95}）、形式语言与自动机（\textbf{95}）、
         计算机组成原理（\textbf{90}）、计算机网络（\textbf{92}）
   \item \textbf{大三} \quad 数据库系统原理(\textbf{90})、算法设计与分析(\textbf{90})、
-  Python 程序设计（\textbf{91}）、量子计算导论（\textbf{94}）、移动互联网技术及应用	（\textbf{91}）
+        Python 程序设计（\textbf{91}）、量子计算导论（\textbf{94}）、移动互联网技术及应用	（\textbf{91}）
 \end{itemize}
 
 \section{\faUsers\ 实习经历}
-\datedsubsection{\textbf{清华大学信息技术研究院}}{2019 年 10 月 -- 2020 年 5 月}
+
+\datedsubsection{\textbf{清华大学信息技术研究院}}{2019 年 10 月 -- 2020 年 4 月}
 \role{网络安全实验室}{实习生}
-\begin{onehalfspacing}
-  主要任务为探索利用 Intel SGX 技术对分布式图数据库 \emph{nebula} 做加固
-\end{onehalfspacing}
 \begin{itemize}
-  \item 利用 AVX-2 指令集对 SGX 下的联邦学习进行加速
-  \item 协助设计 SGX 场景下数据库的存储结构
+  \item \textbf{SGX 场景下的联邦学习的加速} \ \  利用 AVX-2 指令集对 SGX 下的联邦学习中的聚合操作进行加速
+  \item \textbf{SGX 场景下的高性能分布式图数据库} \ \ 基于开源图数据库 \emph{nebula} 开发 SGX 场景下的数据库时，
+  协助设计 Enclave 内的缓存数据结构。并开发了一套效率极高的 RPC 框架用于安全部分与非安全部分的交互
 \end{itemize}
+
+\datedsubsection{\textbf{北京字节跳动科技有限公司}}{2020 年 4 月 -- 2020 年 7 月}
+\role{Enterprise Services 部门}{Lark iOS 开发实习生}
+\begin{itemize}
+  \item Lark 是字节跳动内部使用的沟通工具，也被小米等公司采用
+  \item 主要负责 iOS 端的布局问题的修复以及参与品质优化相关项目
+  \item 对个人的沟通技巧以及团队协作能力有了极大的提升
+\end{itemize}
+
 \section{\faCode\ 个人项目}
+
 \datedsubsection{\textbf{MIPS 微处理器}}{2019 年 5 月 -- 2019 年 8 月}
-\role{SystemVerilog}{}
+\role{SystemVerilog}{参赛项目}
 \begin{onehalfspacing}
-  运行于 FPGA 上的顺序双发射 MIPS 微处理器, https://github.com/name1e5s/Sirius
+  运行于 FPGA 上的顺序双发射 MIPS 微处理器 \quad https://github.com/name1e5s/Sirius
   \begin{itemize}
     \item “龙芯杯”全国计算机系统能力培养大赛参赛作品，获\textbf{一等奖}（前三名）
     \item 从零开始自行设计的五级流水线双发射 MIPS32 微处理器，主频 100 MHz。
@@ -67,7 +77,7 @@
 \datedsubsection{\textbf{DNS 中继服务器}}{2019 年 2 月 -- 2019 年 6 月}
 \role{GoLang}{课程项目}
 \begin{onehalfspacing}
-  支持 DNS 转发及不良网址拦截的中继服务器, https://github.com/name1e5s/MuddyDNS
+  支持 DNS 转发及不良网址拦截的中继服务器 \quad https://github.com/name1e5s/MuddyDNS
   \begin{itemize}
     \item “计算机网络课程设计” 课程项目
     \item 根据 RFC 1035 所述规范解析 DNS 包头，根据处理后的结果对 DNS 包进行操作
@@ -78,32 +88,49 @@
 \datedsubsection{\textbf{车间调度模拟系统}}{2018 年 4 月 -- 2018 年 6 月}
 \role{C, C++, Qt5}{课程项目}
 \begin{onehalfspacing}
-  支持求解 JobShop 问题的车间调度模拟系统, https://github.com/name1e5s/JobShop
+  支持求解 JobShop 问题的车间调度模拟系统 \quad https://github.com/name1e5s/JobShop
   \begin{itemize}
+    \item “计算导论与程序设计课程设计” 课程项目
     \item 使用 \textit{\href{http://www.jstor.org/stable/2632051}{The Shifting Bottleneck Procedure for Job Shop Scheduling}}
-          所述的移动瓶颈法求解 JobShop 问题。
-    \item 使用 Qt5 绘制简单界面以通过甘特图的形式展示调度结果
+          所述的移动瓶颈法求解 JobShop 问题，算法在时间复杂度以及解的准确度之间找到了很好的平衡，评测时分数在全年级前列
+    \item 使用 Qt5 手动绘制简单界面以通过甘特图的形式展示调度结果，被老师作为暑期给转专业班同学补实践课时的优秀样板进行展示
   \end{itemize}
 \end{onehalfspacing}
 
-\section{\faHeartO\ 获奖情况}
+\datedsubsection{\textbf{西土城校区空闲教室查询}}{2020 年 9 月}
+\role{Python, JavaScript}{个人项目}
+\begin{onehalfspacing}
+  简易空闲教室查询 \quad https://github.com/name1e5s/WhereToSleep
+  \begin{itemize}
+    \item 大四考研时发现学校官方不再提供空闲教室查询服务，遂花费一晚上快速实现了一个空闲教室查询系统。
+          日浏览量约为 \textbf{1K}，极大的方便了各位同学
+    \item 前端使用 React 实现，加载速度极快，按照后台数据平均加载时间不到一秒
+  \end{itemize}
+\end{onehalfspacing}
+
+\section{\faTrophy\ 获奖情况}
+
 \datedline{“龙芯杯”第三届全国大学生计算机系统能力培养大赛\textbf{一等奖}（全国第二名）}{2019 年 8 月}
+\datedline{美国大学生数学建模竞赛\textbf{二等奖}}{2020 年 2 月}
 \datedline{校\textbf{二等奖学金}}{2019 年 9 月}
 \datedline{校\textbf{三等奖学金}}{2018 年 9 月}
+
 \section{\faCogs\ 个人技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 外国语言：CET-4\ \textbf{541} \quad CET-6\ \textbf{525}
+  \item 英语水平：四级\ \textbf{541} \quad 六级\ \textbf{525} \quad 具有流畅阅读英文文档与计算机类文献的能力
   \item 编程语言:
         \begin{itemize}
-          \item \textbf{熟悉}\quad C、Go、C++、Python、System Verilog
-          \item \textbf{了解}\quad Swift、Chisel、Rust、Bash、TypeScript、Java
+          \item \textbf{熟悉}\quad C、Go、C++、Python、System Verilog、Swift、Chisel
+          \item \textbf{了解}\quad Rust、Bash、TypeScript、JavaScript、Java
         \end{itemize}
   \item 平台/框架：Qt (C++)、Gin (Go)、Android App (Java)、iOS App (Swift)、FastAPI (Python)、Nest (TS)、FPGA (SV/Chisel)
   \item 其他：
         \begin{itemize}
-          \item 熟悉 Linux 操作系统运行维护
-          \item Linux 中国 (https://linux.cn) 译者之一，译作曾为该站 2018 年度阅读量\textbf{第一}
+          \item 熟悉 \LaTeX 排版技术，多年来大部分实验报告均使用 \LaTeX 编写
+          \item 熟悉 Linux 运维，亦具有对操作系统进行裁剪的能力
+          \item 热心于开源事业。目前为 Linux 中国 (https://linux.cn) 译者之一，译作曾为该站 2018 年度阅读量\textbf{第一}。
+          也对 \textbf{TiDB} 等国内外知名开源项目做出了一些贡献
         \end{itemize}
 \end{itemize}
 
