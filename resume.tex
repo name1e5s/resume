@@ -1,0 +1,190 @@
+\documentclass{resume}
+
+\newcommand{\en}[1]{#1}
+\newcommand{\zh}[1]{}
+
+\zh{\usepackage{xeCJK}}
+\zh{\setCJKmainfont{Source Han Serif SC}}
+\zh{\setCJKsansfont{Source Han Sans SC}}
+\zh{\setCJKmonofont{Source Han Sans SC}}
+
+\begin{document}
+
+\name{\en{Haixin Yu}\zh{于海鑫}}
+\basicInfo{
+      \email{name1e5s@qq.com} \textperiodcentered\
+      \phone{151-0113-5718} \textperiodcentered\
+      \github[Hai-hsin]{https://github.com/name1e5s} \textperiodcentered\
+      \homepage[blog.name1e5s.com]{https://blog.name1e5s.com/}
+}
+
+\section{\en{Education}\zh{教育经历}}
+\en{\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Master of Computer Technology}{2021 -- 2024}}
+\zh{\datedsubsection{\textbf{北京邮电大学}, 计算机技术硕士}{2021 -- 至今}}
+\begin{itemize}
+      \item \en{Major: Computer Technology, \textit{School of Computer Science}}
+            \zh{计算机学院（国家示范性软件学院），电子信息专业（计算机技术方向）}
+\end{itemize}
+
+\en{\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Bachelor's Degree}{2017 -- 2021}}
+\zh{\datedsubsection{\textbf{北京邮电大学}, 本科}{2017 -- 2021}}
+\begin{itemize}
+      \item \en{Major: Computer Science and Technology , \textit{School of Computer Science}, GPA: 3.50}
+            \zh{计算机学院（国家示范性软件学院），计算机科学与技术专业，GPA: 3.50}
+\end{itemize}
+
+\section{\en{Work Experience}\zh{工作经历}}
+\en{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{ByteDance}}, Beijing, China}{09/2021 -- Now}}
+\zh{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{字节跳动}}}{09/2021 -- 至今}}
+\en{\role{Lark Cross Platform Infrastructure}{R\&D Intern, Rust}}
+\zh{\role{飞书跨平台基础架构}{Rust 研发实习}}
+\begin{itemize}
+      \item \en{
+                Worked with the infrastructure team to develop the cross-platform 
+                Rust client backend of Lark Messenger.
+            }
+            \zh{合作开发飞书客户端的跨平台 Rust SDK。}
+      \item \en{
+                Maintain \textit{Secret Chat}, end-to-end encryption chat in Lark Messenger.
+                Implemented and integrated a new protocol combined with an extended 
+                Diffie-Hellman and a double-ratchet algorithm, provides post-compromise 
+                security, forward secery and resilience for Secret Chat.}
+            \zh{
+                维护飞书端到端加密聊天功能 “密聊”。实现并集成了一套新加密协议，通过结合扩展的 
+                Diffie-Hellman 算法以及双棘轮算法，保证了聊天的后向安全性、前向安全性以及抵抗后期攻击的能力。
+            }
+      \item \en{
+                Maintain storage component of Lark Messenger.
+            }
+            \zh{
+                维护飞书 SDK 的存储组件。
+            }
+      \begin{itemize}
+                  \item \en{
+                            Developed \textit{Squam}, a SQL toolkit based on sqlite3 focused on binary size and performance.
+                            Comes with a better binary footprint compared to \texttt{diesel}.
+                        }
+                        \zh{
+                            开发了 \textit{Squam}，一个基于 sqlite3 的 SQL 工具库，专注于二进制大小和性能。在测试中，相较于 \texttt{diesel}，\textit{Squam} 的二进制体积更小，编译时间更短。
+                        }
+                  \item \en{
+                            Developed a asynchoronous sqlite connection pool for \textit{squam}, gains a better throughput compared to \texttt{r2d2}.
+                        }
+                        \zh{
+                            为 \textit{Squam} 开发了一个异步的 sqlite 连接池，相较于 \texttt{r2d2}，\textit{squam} 的吞吐量更高。
+                        }
+                  \item \en{
+                            Introduce type-checking mechanism for SQL queries to \textit{squam}, which can help to find bugs at compile time.
+                        }
+                        \zh{
+                            为 \textit{Squam} 引入了 SQL 查询的类型检查机制，可以在编译时发现大部分 bug。
+                        }
+                  \item \en{
+                            Helped business teams to troubleshoot database related issues.
+                        }
+                        \zh{
+                            协助业务方排查数据库相关的问题。
+                        }
+            \end{itemize}
+      \item \en{
+                Responsible for the stability of the Lark Messenger. Troubleshoot \textit{panics} and \textit{crashes}.
+                Found bugs in \texttt{libunwind}, \texttt{rust std} and \texttt{darwin}.
+            }
+            \zh{
+                负责飞书客户端的稳定性，定位并修复 \textit{panic} 和 \textit{crash}。
+                在定位过程中发现了 \texttt{libunwind}、\texttt{rust std} 和 \texttt{darwin} 等基础库的一些 bug。
+            }
+      \item \en{
+                Refactored log upload module in Lark Messenger, improving code quality and readibility.
+            }
+            \zh{
+                重构了飞书的日志上传模块，提升了代码质量和可读性。
+            }
+\end{itemize}
+
+\en{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{ByteDance}}, Beijing, China}{04/2020 -- 07/2020}}
+\zh{\datedsubsection{\textbf{\href{https://www.bytedance.com/}{字节跳动}}}{04/2020 -- 07/2020}}
+\en{\role{Lark iOS}{R\&D Intern, iOS}}
+\zh{\role{飞书}{iOS 研发实习}}
+\begin{itemize}
+      \item \en{Worked on fixing layout issues in i18n scenarios and other quality optimization projects.}
+            \zh{主要任务为国际化场景下 iOS 端的布局问题的修复等品质优化相关项目。}
+\end{itemize}
+
+\en{\datedsubsection{\textbf{Research Institute for Information Technology}, Tsinghua University}{02/2020 -- 07/2020}}
+\zh{\datedsubsection{\textbf{清华大学信息技术研究院}}{2020/02 -- 2020/07}}
+\en{\role{NSLab}{Research Intern}}
+\zh{\role{网络安全实验室}{科研实习}}
+\begin{itemize}
+      \item \en{Explored the hardening of distributed graph database \textit{nebula} with Intel SGX.}
+            \zh{探索使用 Intel SGX 技术对分布式图数据库 \textit{nebula} 进行加固。}
+      \item \en{Leveraged \texttt{avx2} to accelerate the aggregation step of federated learning with SGX.}
+            \zh{利用 \texttt{avx2} 指令集加速了 SGX 技术下联邦学习的模型聚合。}
+\end{itemize}
+
+\section{\en{Portfolios}\zh{个人项目}}
+\begin{itemize}[parsep=0.25ex]
+      \item \textbf{Cecike}:
+            \en{
+                A \textbf{out-of-order superscalar} RV64IMAC microprocessor core running on FPGA.
+                Designed from scratch, the core can decode two instructions per cycle and execute four instructions per cycle.
+                A GShare branch predictor is introduced to improve performance, and the final IPC is 1.6.
+            }
+            \zh{
+                运行于 FPGA 上的\textbf{乱序超标量} RV64IMAC 微处理器核。
+                从零开始设计的乱序双发射处理器架构，每周期最多可以同时解码两条指令，执行四条指令。
+                在前端引入 GShare 分支预测器以提升性能，最终运行测试程序时的 IPC 为 1.6。}
+      \item \textbf{\href{https://github.com/name1e5s/MuddyDNS}{Muddy DNS}}:
+            \en{
+                A DNS relay server with DNS forwarding and bad website blocking, implemented in Go.
+                Parsees DNS packet headers according to RFC 1035, and operates on the packet according to the result.
+                Supports high concurrency.
+            }
+            \zh{支持 DNS 转发及不良网址拦截的中继服务器，使用 Go 实现。按照 RFC 1035 所述规范解析 DNS 包头，根据处理后的结果对 DNS 包进行操作，支持高并发。}
+      \item \textbf{\href{https://github.com/SpinalHDL/SpinalHDL}{SpinalHDL}}:
+            \en{
+                A new hardware description language for FPGA and ASIC design.
+                Implemented two test backends for it, VCS and Xilinx Vivado, which are widely used in industry.
+            }
+            \zh{SpinalHDL 是新一代的硬件语言。为其实现了将 VCS 以及 Xilinx Vivado 两大工业仿真套件作为测试后端，得到广泛好评。}
+\end{itemize}
+
+\section{\en{Honors and Awards}\zh{获奖情况}}
+\en{
+      \datedline{ByteDance 2022 Q3 \textbf{Spot Bonus}}{October 2022}
+      \datedline{\textbf{First Prize} of the Third National Student Computer System Capability Challenge}{August 2019}
+}
+\zh{
+      \datedline{字节跳动 2022 年第三季度 \textbf{Spot Bonus}}{2022 年 10 月}
+      \datedline{“龙芯杯”第三届全国大学生计算机系统能力培养大赛\textbf{一等奖}}{2019 年 8 月}
+}
+\section{\en{Skills}\zh{技能}}
+\begin{itemize}[parsep=0.25ex]
+      \item \en{\textbf{Programming Languages}:
+                  not limited to any specific language,
+                  but experienced in Rust/C/C++/Chisel,
+                  comfortable with Python/Swift/Go/Assembly.}
+            \zh{\textbf{编程语言}:
+                  不局限于特定编程语言，熟悉 Rust/C/C++/Chisel 等，
+                  了解 Python/Swift/Go/Assembly 等。}
+
+      \item \en{\textbf{Languages}:
+                  Passed CET-6, can handle daily communication and document reading in English.
+            }
+            \zh{\textbf{语言}:
+                  通过英语六级（525分），可以使用英语进行日常交流以及技术文档的阅读。
+            }
+      
+      \item \en{\textbf{Developing Tools}:
+                  experienced in Linux programming,
+                  have experience with collaboration tools like Git, etc.}
+            \zh{\textbf{开发工具}:
+                  熟悉 Linux，有使用 Git 等协作工具的经验。}
+            
+      \item \en{\textbf{Open-source Contributions}:
+                  contributed to \textbf{rust-lang/rust}, \textbf{SpinalHDL} etc.}
+            \zh{\textbf{开源贡献}:
+                  为 \textbf{rust-lang/rust}, \textbf{SpinalHDL} 等项目贡献过代码。}
+\end{itemize}
+
+\end{document}
