@@ -45,13 +45,16 @@
             }
             \zh{合作开发飞书客户端的跨平台 Rust SDK。}
       \item \en{
-                Maintain \textit{Secret Chat}, end-to-end encryption chat in Lark Messenger.
-                Implemented and integrated a new protocol combined with an extended 
-                Diffie-Hellman and a double-ratchet algorithm, provides post-compromise 
-                security, forward secery and resilience for Secret Chat.}
+                % Maintain \textit{Secret Chat}, end-to-end encryption chat in Lark Messenger.
+                % Implemented and integrated a new protocol combined with an extended 
+                % Diffie-Hellman and a double-ratchet algorithm, provides post-compromise 
+                % security, forward secery and resilience for Secret Chat.
+                Provide security components for Lark Messenger, ensure the security of messages.
+                }
             \zh{
-                维护飞书端到端加密聊天功能 “密聊”。实现并集成了一套新加密协议，通过结合扩展的 
-                Diffie-Hellman 算法以及双棘轮算法，保证了聊天的后向安全性、前向安全性以及抵抗重放攻击的能力。
+                %维护飞书端到端加密聊天功能 “密聊”。实现并集成了一套新加密协议，通过结合扩展的 
+                %Diffie-Hellman 算法以及双棘轮算法，保证了聊天的后向安全性、前向安全性以及抵抗重放攻击的能力。
+                为飞书消息业务提供安全组件，确保消息的安全性。
             }
       \item \en{
                 Maintain storage component of Lark Messenger.
@@ -80,10 +83,11 @@
                             为 \textit{squam} 引入了 SQL 查询的类型检查机制，可以在编译时发现大部分 bug。
                         }
                   \item \en{
-                            Helped business teams to troubleshoot database related issues.
+                            Tuning sqlite performance and
+                            help business teams to troubleshoot database related issues.
                         }
                         \zh{
-                            协助业务方排查数据库相关的问题。
+                            进行 sqlite 调优，协助业务方排查数据库相关的问题。
                         }
             \end{itemize}
       \item \en{
