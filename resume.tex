@@ -15,7 +15,7 @@
       \email{me@name1e5s.com} \textperiodcentered\
       \phone{151-0113-5718} \textperiodcentered\
       \github[Hai-Hsin]{https://github.com/name1e5s} \textperiodcentered\
-      \homepage[blog.name1e5s.com]{https://blog.name1e5s.com/}
+      \homepage[blog.hai-hs.in]{https://blog.hai-hs.in/}
 }
 
 \section{\en{Education}\zh{教育经历}}
@@ -40,16 +40,15 @@
 \zh{\role{飞书跨平台基础架构}{Rust 研发实习}}
 \begin{itemize}
       \item \en{
-                Worked with the infrastructure team to develop the cross-platform 
-                Rust client backend of Lark Messenger.
+                Collaborated in the development of the cross-platform Rust SDK for Lark Messenger's client application.
             }
-            \zh{合作开发飞书客户端的跨平台 Rust SDK。}
+            \zh{协作开发飞书客户端跨平台 Rust SDK。}
       \item \en{
                 % Maintain \textit{Secret Chat}, end-to-end encryption chat in Lark Messenger.
                 % Implemented and integrated a new protocol combined with an extended 
                 % Diffie-Hellman and a double-ratchet algorithm, provides post-compromise 
                 % security, forward secery and resilience for Secret Chat.
-                Provide security components for Lark Messenger, ensure the security of messages.
+                Provided security components for Lark Messenger to ensure the security of messages.
                 }
             \zh{
                 %维护飞书端到端加密聊天功能 “密聊”。实现并集成了一套新加密协议，通过结合扩展的 
@@ -57,49 +56,49 @@
                 为飞书消息业务提供安全组件，确保消息的安全性。
             }
       \item \en{
-                Maintain storage component of Lark Messenger.
+                Maintained storage component of Lark Messenger, including:
             }
             \zh{
-                维护飞书 SDK 的存储组件。
+                维护飞书 SDK 的存储组件，包括：
             }
       \begin{itemize}
                   \item \en{
-                            Developed \textit{squam}, a SQL toolkit based on sqlite3 focused on binary size and performance.
-                            Comes with a better binary footprint compared to \texttt{diesel}.
+                              Developed \textit{squam}, a SQL toolkit based on sqlite3 focused on binary size and performance optimization.
+                              Comes with a better binary footprint compared to \texttt{diesel}.
                         }
                         \zh{
-                            开发了 \textit{squam}，一个基于 sqlite3 的 SQL 工具库，专注于二进制大小和性能。在测试中，相较于 \texttt{diesel}，\textit{squam} 的二进制体积更小，编译时间更短。
+                              开发了基于 sqlite3 的 SQL 工具库 \textit{squam}，专注于优化二进制大小和性能。在测试中，相较于 \texttt{diesel}，\textit{squam} 的二进制体积更小，编译时间更短。
                         }
                   \item \en{
-                            Developed a asynchoronous sqlite connection pool for \textit{squam}, gains a better throughput compared with \texttt{r2d2}.
+                              Built an asynchronous sqlite connection pool that has higher throughput than \texttt{r2d2}.
                         }
                         \zh{
-                            为 \textit{squam} 开发了一个异步的 sqlite 连接池，相较于 \texttt{r2d2}，\texttt{squam} 的吞吐量更高。
+                              开发了一个异步的 sqlite 连接池，相较于 \texttt{r2d2} 吞吐量更高。
                         }
                   \item \en{
-                            Introduce type-checking mechanism for SQL queries to \textit{squam}, which can help to find bugs at compile time.
+                              Introduced type-checking for SQL queries to detect most bugs at compile-time.
                         }
                         \zh{
-                            为 \textit{squam} 引入了 SQL 查询的类型检查机制，可以在编译时发现大部分 bug。
+                              引入了 SQL 查询语句的类型检查机制，在编译时能发现大部分 bug。
                         }
                   \item \en{
-                            Tuning sqlite performance and
-                            help business teams to troubleshoot database related issues.
+                              Tuned SQLite performance, maintained database-related CI, 
+                              and assisted business teams in troubleshooting database issues.
                         }
                         \zh{
-                            进行 sqlite 调优，协助业务方排查数据库相关的问题。
+                              进行 sqlite 调优，维护数据库相关 CI，协助业务方排查数据库相关的问题。
                         }
             \end{itemize}
       \item \en{
                 Responsible for the stability of the Lark Messenger. Troubleshoot \textit{panics} and \textit{crashes}.
-                Found bugs in \texttt{libunwind}, \texttt{rust std} and \texttt{darwin}.
+                Discovered bugs and design flaws in foundational libraries such as \texttt{libunwind}, \texttt{rust std} and \texttt{darwin}.
             }
             \zh{
-                负责飞书客户端的稳定性，定位并修复 \textit{panic} 和 \textit{crash}。
-                在定位过程中发现了 \texttt{libunwind}、\texttt{rust std} 和 \texttt{darwin} 等基础库的一些 bug。
+                负责飞书客户端的稳定性，包括定位并修复 \textit{panic} 和 \textit{crash}。
+                在定位过程中发现了 \texttt{libunwind}、\texttt{rust std} 和 \texttt{darwin} 等基础库的一些 bug 和设计缺陷。
             }
       \item \en{
-                Refactored log upload module in Lark Messenger, improving code quality and readibility.
+                Refactored flow log uploading module in Lark Messenger, improving code quality and readibility.
             }
             \zh{
                 重构了飞书的日志上传模块，提升了代码质量和可读性。
@@ -160,7 +159,7 @@
 }
 \zh{
       \datedline{字节跳动 2022 年第三季度 \textbf{Spot Bonus}}{2022 年 10 月}
-      \datedline{“龙芯杯”第三届全国大学生计算机系统能力培养大赛\textbf{一等奖}}{2019 年 8 月}
+      \datedline{“龙芯杯”第三届全国大学生计算机系统能力培养大赛\textbf{一等奖}}{2019 年 08 月}
 }
 \section{\en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.25ex]
