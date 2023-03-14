@@ -134,16 +134,16 @@
 
 \section{\en{Portfolios}\zh{个人项目}}
 \begin{itemize}[parsep=0.25ex]
-      \item \textbf{Cecike}:
+      \item \textbf{\href{https://github.com/name1e5s/Sirius}{Sirius}}:
             \en{
-                An \textbf{out-of-order superscalar} RV64IMAC microprocessor core that runs on FPGA.
-                Designed from scratch, the core can decode two instructions per cycle and execute four instructions per cycle.
-                A GShare branch predictor is introduced to improve performance, and the final IPC is 1.6 when running test programs.
+                An in-order \textbf{dual-issue} microprocessor core that runs on FPGA.
+                Additionally, a complete SoC has been built based on this processor, supporting peripherals such as Ethernet and serial ports.
+                The uCore teaching operating system can run on the SoC, and it's theoretically capable of running a complete Linux operating system.
             }
             \zh{
-                运行于 FPGA 上的\textbf{乱序超标量} RV64IMAC 微处理器核。
-                从零开始设计的乱序双发射处理器架构，每周期最多可以同时解码两条指令，执行四条指令。
-                在前端引入 GShare 分支预测器以提升性能，最终运行测试程序时的 IPC 为 1.6。}
+                运行于 FPGA 上的\textbf{顺序双发射} MIPS 微处理器。
+                此外，基于该处理器搭建了完整的 SoC，支持网口、串口等外设。SoC 上可以运行 uCore 教学用操作系统，理论上能够运行完整的 Linux 操作系统。
+            }
       \item \textbf{\href{https://github.com/name1e5s/MuddyDNS}{Muddy DNS}}:
             \en{
                 A DNS relay server with DNS forwarding and malicious website blocking, implemented in Go.
